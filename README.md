@@ -6,7 +6,7 @@ Based on: https://angular.io/tutorial/tour-of-heroes
 
 ### :iphone: Planned Design
 
-<p align="center"><img alt="Planned design" title="Angular Tour of Heroes Planned Design" src="./.github/heroes-app-landing-page.png" /></p>
+<p align="center"><img alt="Planned design" title="Angular Tour of Heroes Planned Design" src="./.github/heroes-app-landing-page.gif" /></p>
 
 <p align="center"><img alt="Navigation diagram" title="Angular Tour of Heroes Navigation Diagram" src="./.github/heroes-app-navigation-plan.png" /></p>
 
