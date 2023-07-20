@@ -4,15 +4,9 @@ Based on: https://angular.io/tutorial/tour-of-heroes
 
 ## App Interface
 
-### :iphone: Planned Design
-
-<p align="center"><img alt="Planned design" title="Angular Tour of Heroes Planned Design" src="./.github/heroes-app-landing-page.gif" /></p>
+<p align="center"><img alt="App design" title="Angular Tour of Heroes App Design" src="./.github/heroes-app-landing-page.gif" /></p>
 
 <p align="center"><img alt="Navigation diagram" title="Angular Tour of Heroes Navigation Diagram" src="./.github/heroes-app-navigation-plan.png" /></p>
-
-<!--### :tada: Final Result
-
-<p align="center"><img alt="Final result" title="Angular Tour of Heroes Final Interface" src="./.github/heroes-app-landing-page-final.jpg" /></p>-->
 
 ## Development server
 
@@ -51,3 +45,7 @@ When we want to apply classes to an element based on certain conditions, we can 
   <p>This div will have the myclassname class applied to it when some_condition is true.</p>
 </div>
 ```
+
+### Data fetching, error handling and search field
+
+This tutorial gives a good example on how implement these features. I strongly recommend reading it: https://angular.io/tutorial/tour-of-heroes/toh-pt6
