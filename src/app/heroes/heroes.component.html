@@ -1,17 +1,19 @@
 <h2>My Heroes</h2>
 
-<ul class="heroes" *ngIf="heroes$ | async as heroes; else loading">
-  <li *ngFor="let hero of heroes">
-    <button
-      [class.selected]="hero === selectedHero"
-      type="button"
-      (click)="onSelect(hero)"
-    >
-      <span class="badge">{{hero.id}}</span>
-      <span class="name">{{hero.name}}</span>
-    </button>
-  </li>
-</ul>
-<ng-template #loading>Loading hero data...</ng-template>
+<div *ngIf="heroes$ | withLoading | async as heroes">
+  <ng-template [ngIf]="heroes.data">
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes.data">
+        <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+          <span class="badge">{{hero.id}}</span>
+          <span class="name">{{hero.name}}</span>
+        </button>
+      </li>
+    </ul>
+  </ng-template>
+
+  <ng-template [ngIf]="heroes.error">An error ocurred while loading hero data.</ng-template>
+  <ng-template [ngIf]="heroes.loading">Loading hero data...</ng-template>
+</div>
 
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
