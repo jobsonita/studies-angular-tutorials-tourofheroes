@@ -41,3 +41,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Angular concepts
 
 For essential angular concepts, see the README of previous tutorials at https://github.com/jobsonita/studies-angular-setupstartguides#readme
+
+### Conditional classes
+
+When we want to apply classes to an element based on certain conditions, we can do the following:
+
+```html
+<div [class.myclassname]="some_condition">
+  <p>This div will have the myclassname class applied to it when some_condition is true.</p>
+</div>
+```
