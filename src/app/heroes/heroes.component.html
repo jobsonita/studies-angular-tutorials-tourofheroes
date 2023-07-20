@@ -1,6 +1,6 @@
 <h2>My Heroes</h2>
 
-<ul class="heroes">
+<ul class="heroes" *ngIf="heroes$ | async as heroes; else loading">
   <li *ngFor="let hero of heroes">
     <button
       [class.selected]="hero === selectedHero"
@@ -12,5 +12,6 @@
     </button>
   </li>
 </ul>
+<ng-template #loading>Loading hero data...</ng-template>
 
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
